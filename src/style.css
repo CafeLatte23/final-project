@@ -37,13 +37,14 @@ header {
   font-size: 16px;
   margin-left: 5px;
   border-radius: 6px;
-  color: #113f67;
+  color: white;
+  box-shadow: 4px 4px 4px #5e63b6;
   transition: all 150ms ease-in-out;
   cursor: pointer;
 }
 .search-form-button:hover {
-  background: #113f67;
-  color: #8594e4;
+  background: #c4c1e0;
+  color: #113f67;
 }
 
 main {
