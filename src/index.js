@@ -43,7 +43,7 @@ function formatDate(date) {
 
 function searchCity(city) {
   let apiKey = "50d82d8a44050b284atfdo1ff3447781";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(refreshWeather);
 }
 
@@ -63,7 +63,7 @@ function formatDay(timestamp) {
 
 function getForecast(city) {
   let apiKey = "50d82d8a44050b284atfdo1ff3447781";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
   axios(apiUrl).then(displayForecast);
 }
 
