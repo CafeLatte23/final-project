@@ -9,6 +9,25 @@ function refreshWeather(response) {
   let date = new Date(response.data.time * 1000);
   let iconElement = document.querySelector("#icon");
 
+  /* ADJUST BG COLOUR ACCORDING TO TEMP */
+  if (temperature < 50) {
+    bodyElement.style.background =
+      "linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%)";
+  } else if (temperature >= 50 && temperature < 60) {
+    bodyElement.style.background =
+      "linear-gradient(to top, #fff1eb 0%, #ace0f9 100%)";
+  } else if (temperature >= 60 && temperature < 75) {
+    bodyElement.style.background =
+      "radial-gradient(circle at 10% 20%, rgb(137, 210, 253) 0%, rgb(255, 241, 188) 90%)";
+  } else if (temperature >= 75) {
+    bodyElement.style.background =
+      "linear-gradient(109.6deg, rgb(255, 230, 109) 11.2%, rgb(87, 232, 107) 100.2%)";
+  } else {
+    /* DEFAULT BG COLOUR IF TEMP IS UNAVAILABLE*/
+    bodyElement.style.background =
+      "radial-gradient(circle at 12.3% 19.3%, rgba(85, 87, 218, 0.677) 0%, rgb(95, 209, 249) 100.2%)";
+  }
+
   cityElement.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
