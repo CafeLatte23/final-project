@@ -8,6 +8,7 @@ function refreshWeather(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
   let iconElement = document.querySelector("#icon");
+  let bodyElement = document.querySelector("body");
 
   /* ADJUST BG COLOUR ACCORDING TO TEMP */
   if (temperature < 50) {
