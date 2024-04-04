@@ -1,3 +1,7 @@
+html {
+  min-height: 100%;
+}
+
 body {
   /* background-color: #c3bef0;*/
   font-family: "Nunito Sans", sans-serif;
