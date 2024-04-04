@@ -1,6 +1,9 @@
 body {
-  background-color: #c3bef0;
+  /* background-color: #c3bef0;*/
   font-family: "Nunito Sans", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 a {
