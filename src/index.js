@@ -72,6 +72,8 @@ function handleSearchSubmit(event) {
   let searchInput = document.querySelector("#search-form-input");
 
   searchCity(searchInput.value);
+
+  searchInput.value = ""; // This line clears the search input
 }
 
 function formatDay(timestamp) {
