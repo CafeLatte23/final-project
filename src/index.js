@@ -22,7 +22,7 @@ function refreshWeather(response) {
       "radial-gradient(circle at 10% 20%, rgb(137, 210, 253) 0%, rgb(255, 241, 188) 90%)";
   } else if (temperature >= 75) {
     bodyElement.style.background =
-      "linear-gradient(109.6deg, rgb(255, 230, 109) 11.2%, rgb(87, 232, 107) 100.2%)";
+      "radial-gradient(circle at 3.1% 8.2%, rgb(248, 250, 107) 0%, rgb(238, 148, 148) 98.2%)";
   } else {
     /* DEFAULT BG COLOUR IF TEMP IS UNAVAILABLE*/
     bodyElement.style.background =
