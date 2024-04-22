@@ -139,3 +139,12 @@ footer {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
 }
+
+@media (max-width: 600px) {
+  .search-form {
+    text-align: center;
+  }
+  .search-form-button {
+    margin-top: 20px;
+  }
+}
