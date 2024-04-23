@@ -141,10 +141,24 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .weather-app {
+    padding: 15px;
+    margin-bottom: 45px;
+  }
   .search-form {
     text-align: center;
   }
   .search-form-button {
     margin-top: 20px;
+  }
+  .weather-forecast {
+    justify-content: center;
+  }
+  .weather-forecast-icon {
+    width: 70px;
+    height: 70px;
+  }
+  .weather-forecast-temperature {
+    padding: 5px;
   }
 }
