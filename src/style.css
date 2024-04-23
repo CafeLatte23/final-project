@@ -161,4 +161,8 @@ footer {
   .weather-forecast-temperature {
     padding: 5px;
   }
+  footer {
+    font-size: 10px;
+    padding-top: 10px;
+  }
 }
