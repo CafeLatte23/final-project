@@ -151,6 +151,16 @@ footer {
   .search-form-button {
     margin-top: 20px;
   }
+  .weather-app-city {
+    margin: 0;
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .weather-app-temperature {
+    font-size: 80px;
+    line-height: 88px;
+    font-weight: bold;
+  }
   .weather-forecast {
     justify-content: center;
   }
