@@ -153,13 +153,21 @@ footer {
   }
   .weather-app-city {
     margin: 0;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 32px;
   }
+  .weather-app-icon {
+    width: 78px;
+    height: 78px;
+  }
   .weather-app-temperature {
-    font-size: 80px;
+    font-size: 78px;
     line-height: 88px;
     font-weight: bold;
+  }
+  .weather-app-unit {
+    margin-top: 6px;
+    font-size: 20px;
   }
   .weather-forecast {
     justify-content: center;
